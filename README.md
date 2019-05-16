@@ -51,7 +51,7 @@ metrics are not already enabled for your bucket, you can enable them
 with the AWS management console. (I can't figure out how to do it with
 the command line tools or Terraform.) It may also save money to set
 finite retention periods for your CloudWatch logs using the AWS
-management console.
+management console (which I also can't find another way of doing).
 
 ## Setup
 
