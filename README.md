@@ -48,21 +48,10 @@ enabled, which are an opt-in feature. Running this code once every
 minute will set you back about 44 cents a month in CloudWatch charges,
 but will be well under the free usage threshold for Lambda charges. If
 metrics are not already enabled for your bucket, you can enable them
-by either the AWS management console, or by a command like this one
-with the AWS command line tools. Note that the same Id has to appear
-twice in the command, and can be anything not clashing with one
-already in use on the same bucket.
-
-```console
-$ aws s3api put-bucket-metrics-configuration \
---bucket my_website_bucket_name \
---id any_id \
---metrics-configuration "Id=any_id"
-```
-
-It may also save money to set finite retention periods for your
-CloudWatch logs using the AWS management console. (I don't know if
-there's a way it can be done by Terraform or the cli.)
+by AWS management console. (A command line tool option also appears to
+pertain to metrics, but I'm not sure what it does and I don't trust
+it.) It may also save money to set finite retention periods for your
+CloudWatch logs using the AWS management console.
 
 ## Setup
 
