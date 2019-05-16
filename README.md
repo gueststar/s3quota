@@ -82,7 +82,7 @@ $ terraform apply
 ## Maintenance
 
 To adjust the quota or any other constants in ```main.go```, edit the source
-and the run these commands.
+and then run these commands.
 ```console
 $ GOOS=linux GOARCH=amd64 go build -o s3quota main.go
 $ zip -o s3quota.zip s3quota
