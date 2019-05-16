@@ -48,10 +48,10 @@ enabled, which are an opt-in feature. Running this code once every
 minute will set you back about 44 cents a month in CloudWatch charges,
 but will be well under the free usage threshold for Lambda charges. If
 metrics are not already enabled for your bucket, you can enable them
-by the AWS management console. (A command line tool option also appears to
-pertain to metrics, but I'm not sure what it does and I don't trust
-it.) It may also save money to set finite retention periods for your
-CloudWatch logs using the AWS management console.
+with the AWS management console. (I can't figure out how to do it with
+the command line tools or Terraform.) It may also save money to set
+finite retention periods for your CloudWatch logs using the AWS
+management console.
 
 ## Setup
 
